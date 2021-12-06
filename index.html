@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=
+	, initial-scale=1.0"
+		/>
+		<title>Calculator</title>
+		<link href="styles.css" rel="stylesheet" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<!-- calculator-grid wraps entire calc -->
+		<div class="calculator-grid">
+			<!-- the screen showing the answer to the problem entered by the user -->
+			<div class="output">
+				<!-- we need two divs to display the output and the problem input -->
+				<!-- previous operand = whatever we typed in earlier -->
+				<div
+					data-previous-operand
+					id="previous-operand"
+					class="previous-operand"
+				></div>
+				<!-- current operand = whatever we are typing in now -->
+				<div
+					data-current-operand
+					id="current-operand"
+					class="current-operand"
+				></div>
+			</div>
+			<!-- buttons on the calculator, ac, del, operands and numbers -->
+			<button class="all-clear-button span-two" data-all-clear>AC</button>
+			<button class="delete-button" data-delete>DEL</button>
+			<button class="operation-button" data-operation>/</button>
+			<button class="number-button" data-number>1</button>
+			<button class="number-button" data-number>2</button>
+			<button class="number-button" data-number>3</button>
+			<button class="operation-button" data-operation>*</button>
+			<button class="number-button" data-number>4</button>
+			<button class="number-button" data-number>5</button>
+			<button class="number-button" data-number>6</button>
+			<button class="operation-button" data-operation>+</button>
+			<button class="number-button" data-number>7</button>
+			<button class="number-button" data-number>8</button>
+			<button class="number-button" data-number>9</button>
+			<button class="operation-button" data-operation>-</button>
+			<button class="number-button" data-number>.</button>
+			<button class="number-button" data-number>0</button>
+			<button class="equals-button span-two" data-equals>=</button>
+		</div>
+	</body>
+</html>
